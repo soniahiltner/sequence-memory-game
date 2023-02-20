@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sequence-memory-game/static/css/main.77f1fbb5.css",
+    "main.js": "/sequence-memory-game/static/js/main.37e6631e.js",
+    "index.html": "/sequence-memory-game/index.html",
+    "main.77f1fbb5.css.map": "/sequence-memory-game/static/css/main.77f1fbb5.css.map",
+    "main.37e6631e.js.map": "/sequence-memory-game/static/js/main.37e6631e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77f1fbb5.css",
+    "static/js/main.37e6631e.js"
+  ]
+}
