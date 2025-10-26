@@ -1,0 +1,249 @@
+:root {
+  --primary-text-color: wheat;
+  --primary-bg-color: rgba(33, 87, 54, 0.721);
+  --secondary-bg-color: rgb(58, 20, 20);
+  --tertiary-bg-color: rgb(30, 37, 18);
+}
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-fluid {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  height: 36rem;
+  background-color: var(--primary-bg-color);
+  margin: 0;
+  padding: 0.2rem 0.2rem;
+  border-radius: 1rem;
+  border: 0.2rem solid var(--secondary-bg-color);
+  box-shadow: inset 1px -1px 5px var(--primary-text-color);
+}
+
+.row {
+  width: 100%;
+}
+
+.deco {
+  height: 2.3rem;
+  background-color: var(--tertiary-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 0.5rem;
+  box-shadow: 1px -1px 5px var(--primary-text-color);
+}
+
+.up {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.down {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.rect {
+  background-color: var(--primary-text-color);
+  height: 1.3rem;
+  width: 48%;
+}
+
+.rect-1 {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: inset 3px 10px 10px 5px rgb(15, 11, 2);
+}
+
+.rect-2 {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: inset 3px 10px 10px 5px rgb(15, 11, 2);
+}
+
+.rect-3 {
+  border-bottom-left-radius: 0.5rem;
+  box-shadow: inset 4px -10px 10px 5px rgb(15, 11, 2);
+}
+
+.rect-4 {
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: inset 4px -10px 10px 5px rgb(15, 11, 2);
+}
+
+/* Screen */
+.screen {
+  height: 3rem;
+  background-color: var(--tertiary-bg-color);
+  color: var(--primary-text-color);
+  display: block;
+  margin: 0.2rem 0;
+  padding: 0;
+  border-radius: 1rem;
+  box-shadow: inset 1px -1px 9px var(--primary-text-color);
+}
+
+#display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 500;
+}
+
+/*  Levels  */
+.levels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.level {
+  width: 5rem;
+  height: 2rem;
+  text-transform: uppercase;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  border-radius: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px -1px 5px var(--primary-text-color);
+}
+
+.level:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgba(111, 34, 34, 0.815);
+  transition: all 0.4s ease-in-out;
+}
+
+.level.disabled:hover {
+  pointer-events: none;
+}
+
+/* Controls*/
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 3rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.reload,
+.play,
+.next {
+  padding: 0;
+  background-color: rgb(18, 104, 18);
+}
+
+.reload {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+}
+
+.next {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.active {
+  background-color: var(--primary-text-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Numbers */
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  justify-items: center;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  background-color: rgba(8, 94, 43, 0.588);
+  border-radius: 40%;
+  border: 0.4rem solid rgba(58, 50, 50, 0.567);
+  box-shadow: 2px -1px 10px var(--primary-text-color);
+}
+
+/*light buttons*/
+.light {
+  opacity: 0.5;
+  background-color: aqua;
+}
+
+/*  score  */
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.8rem 0;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  border-radius: 40%;
+  box-shadow: 1px -1px 5px var(--primary-text-color);
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#score {
+  padding-left: 0.5rem;
+}
