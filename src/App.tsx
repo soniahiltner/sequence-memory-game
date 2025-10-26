@@ -41,63 +41,63 @@ const numbers = [
     id: 1,
     keytrigger: '1',
     key: 1,
-    src: 'src/assets/sounds/sound1.mp3'
+    src: 'sounds/sound1.mp3'
   },
   {
     number: 2,
     id: 2,
     keytrigger: '2',
     key: 2,
-    src: 'src/assets/sounds/sound2.mp3'
+    src: 'sounds/sound2.mp3'
   },
   {
     number: 3,
     id: 3,
     keytrigger: '3',
     key: 3,
-    src: 'src/assets/sounds/sound3.mp3'
+    src: 'sounds/sound3.mp3'
   },
   {
     number: 4,
     id: 4,
     keytrigger: '4',
     key: 4,
-    src: 'src/assets/sounds/sound4.mp3'
+    src: 'sounds/sound4.mp3'
   },
   {
     number: 5,
     id: 5,
     keytrigger: '5',
     key: 5,
-    src: 'src/assets/sounds/sound5.mp3'
+    src: 'sounds/sound5.mp3'
   },
   {
     number: 6,
     id: 6,
     keytrigger: '6',
     key: 6,
-    src: 'src/assets/sounds/sound6.mp3'
+    src: 'sounds/sound6.mp3'
   },
   {
     number: 7,
     id: 7,
     keytrigger: '7',
     key: 7,
-    src: 'src/assets/sounds/sound7.mp3'
+    src: 'sounds/sound7.mp3'
   },
   {
     number: 8,
     id: 8,
     keytrigger: '8',
     key: 8,
-    src: 'src/assets/sounds/sound8.mp3'
+    src: 'sounds/sound8.mp3'
   },
   {
     number: 9,
     id: 9,
     keytrigger: '9',
     key: 9,
-    src: 'src/assets/sounds/sound9.mp3'
+    src: 'sounds/sound9.mp3'
   }
 ]
 
@@ -119,8 +119,8 @@ export function App() {
   const [score, setScore] = useState(0)
   const [selectNext, setSelectNext] = useState(false)
 
-  const soundWinRef = useRef(new Audio('src/assets/sounds/win.mp3'))
-  const soundLooseRef = useRef(new Audio('src/assets/sounds/loose.mp3'))
+  const soundWinRef = useRef(new Audio('sounds/win.mp3'))
+  const soundLooseRef = useRef(new Audio('sounds/loose.mp3'))
 
   //Select Level
   function selectLevel(level: string): void {
